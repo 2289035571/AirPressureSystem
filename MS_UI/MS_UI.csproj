@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E54E151-2E8E-4D0F-BF02-6B540BC0C5F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MS_UI</RootNamespace>
+    <AssemblyName>MS_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonMethod.cs" />
+    <Compile Include="Form_HardWareConfig\FrmAlarmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmAlarmConfig.Designer.cs">
+      <DependentUpon>FrmAlarmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmDataConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmDataConfig.Designer.cs">
+      <DependentUpon>FrmDataConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmIOVarConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmIOVarConfig.Designer.cs">
+      <DependentUpon>FrmIOVarConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmParamConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmParamConfig.Designer.cs">
+      <DependentUpon>FrmParamConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmProtocalConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmProtocalConfig.Designer.cs">
+      <DependentUpon>FrmProtocalConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmTrendConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmTrendConfig.Designer.cs">
+      <DependentUpon>FrmTrendConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmUserRightConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\FrmUserRightConfig.Designer.cs">
+      <DependentUpon>FrmUserRightConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\Frm_NewIOVar_Mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\Frm_NewIOVar_Mod.Designer.cs">
+      <DependentUpon>Frm_NewIOVar_Mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\Frm_UpdataIOVar_Mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HardWareConfig\Frm_UpdataIOVar_Mod.Designer.cs">
+      <DependentUpon>Frm_UpdataIOVar_Mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlarm.Designer.cs">
+      <DependentUpon>FrmAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataReport.Designer.cs">
+      <DependentUpon>FrmDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHardWareConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHardWareConfig.Designer.cs">
+      <DependentUpon>FrmHardWareConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParamSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParamSet.Designer.cs">
+      <DependentUpon>FrmParamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrend.Designer.cs">
+      <DependentUpon>FrmTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmView.Designer.cs">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DataValidate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_HardWareConfig\FrmIOVarConfig.resx">
+      <DependentUpon>FrmIOVarConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HardWareConfig\FrmParamConfig.resx">
+      <DependentUpon>FrmParamConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HardWareConfig\FrmProtocalConfig.resx">
+      <DependentUpon>FrmProtocalConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HardWareConfig\Frm_NewIOVar_Mod.resx">
+      <DependentUpon>Frm_NewIOVar_Mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HardWareConfig\Frm_UpdataIOVar_Mod.resx">
+      <DependentUpon>Frm_UpdataIOVar_Mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHardWareConfig.resx">
+      <DependentUpon>FrmHardWareConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{0be07324-7188-4898-9f33-ce889117375d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MS_Entity\MS_Entity.csproj">
+      <Project>{4c5821b1-af54-47e3-becf-fe7cb161f0f3}</Project>
+      <Name>MS_Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黄鹤楼.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
