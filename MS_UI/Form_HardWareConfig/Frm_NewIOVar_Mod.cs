@@ -45,6 +45,7 @@ namespace MS_UI.Form_HardWareConfig
             this.cbx_StoreArea.Items.Add("04 Input Register(3X)");
             this.cbx_StoreArea.SelectedIndex = 2;
 
+            //this.chk_IsAlarm.Checked = false;
             this.chk_LoLo.Checked = false;
             this.chk_Low.Checked = false;
             this.chk_HiHi.Checked = false;

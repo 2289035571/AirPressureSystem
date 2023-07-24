@@ -263,6 +263,7 @@
             // 
             // txt_LoLoAlarmValue
             // 
+            this.txt_LoLoAlarmValue.Enabled = false;
             this.txt_LoLoAlarmValue.Location = new System.Drawing.Point(104, 268);
             this.txt_LoLoAlarmValue.Name = "txt_LoLoAlarmValue";
             this.txt_LoLoAlarmValue.Size = new System.Drawing.Size(116, 25);
@@ -270,6 +271,7 @@
             // 
             // txt_LowAlarmValue
             // 
+            this.txt_LowAlarmValue.Enabled = false;
             this.txt_LowAlarmValue.Location = new System.Drawing.Point(104, 307);
             this.txt_LowAlarmValue.Name = "txt_LowAlarmValue";
             this.txt_LowAlarmValue.Size = new System.Drawing.Size(116, 25);
@@ -277,6 +279,7 @@
             // 
             // txt_HiHiAlarmValue
             // 
+            this.txt_HiHiAlarmValue.Enabled = false;
             this.txt_HiHiAlarmValue.Location = new System.Drawing.Point(104, 350);
             this.txt_HiHiAlarmValue.Name = "txt_HiHiAlarmValue";
             this.txt_HiHiAlarmValue.Size = new System.Drawing.Size(116, 25);
@@ -284,6 +287,7 @@
             // 
             // txt_HighAlarmValue
             // 
+            this.txt_HighAlarmValue.Enabled = false;
             this.txt_HighAlarmValue.Location = new System.Drawing.Point(104, 391);
             this.txt_HighAlarmValue.Name = "txt_HighAlarmValue";
             this.txt_HighAlarmValue.Size = new System.Drawing.Size(116, 25);
@@ -291,6 +295,7 @@
             // 
             // txt_LoLoPriority
             // 
+            this.txt_LoLoPriority.Enabled = false;
             this.txt_LoLoPriority.Location = new System.Drawing.Point(285, 268);
             this.txt_LoLoPriority.Name = "txt_LoLoPriority";
             this.txt_LoLoPriority.Size = new System.Drawing.Size(87, 25);
@@ -298,6 +303,7 @@
             // 
             // txt_LowPriority
             // 
+            this.txt_LowPriority.Enabled = false;
             this.txt_LowPriority.Location = new System.Drawing.Point(285, 307);
             this.txt_LowPriority.Name = "txt_LowPriority";
             this.txt_LowPriority.Size = new System.Drawing.Size(87, 25);
@@ -305,6 +311,7 @@
             // 
             // txt_HiHiPriority
             // 
+            this.txt_HiHiPriority.Enabled = false;
             this.txt_HiHiPriority.Location = new System.Drawing.Point(285, 350);
             this.txt_HiHiPriority.Name = "txt_HiHiPriority";
             this.txt_HiHiPriority.Size = new System.Drawing.Size(87, 25);
@@ -312,6 +319,7 @@
             // 
             // txt_HighPriority
             // 
+            this.txt_HighPriority.Enabled = false;
             this.txt_HighPriority.Location = new System.Drawing.Point(285, 391);
             this.txt_HighPriority.Name = "txt_HighPriority";
             this.txt_HighPriority.Size = new System.Drawing.Size(87, 25);
@@ -319,6 +327,7 @@
             // 
             // txt_LoLoNote
             // 
+            this.txt_LoLoNote.Enabled = false;
             this.txt_LoLoNote.Location = new System.Drawing.Point(423, 268);
             this.txt_LoLoNote.Name = "txt_LoLoNote";
             this.txt_LoLoNote.Size = new System.Drawing.Size(214, 25);
@@ -326,6 +335,7 @@
             // 
             // txt_LowNote
             // 
+            this.txt_LowNote.Enabled = false;
             this.txt_LowNote.Location = new System.Drawing.Point(423, 307);
             this.txt_LowNote.Name = "txt_LowNote";
             this.txt_LowNote.Size = new System.Drawing.Size(214, 25);
@@ -333,6 +343,7 @@
             // 
             // txt_HiHiNote
             // 
+            this.txt_HiHiNote.Enabled = false;
             this.txt_HiHiNote.Location = new System.Drawing.Point(423, 350);
             this.txt_HiHiNote.Name = "txt_HiHiNote";
             this.txt_HiHiNote.Size = new System.Drawing.Size(214, 25);
@@ -340,6 +351,7 @@
             // 
             // txt_HighNote
             // 
+            this.txt_HighNote.Enabled = false;
             this.txt_HighNote.Location = new System.Drawing.Point(423, 391);
             this.txt_HighNote.Name = "txt_HighNote";
             this.txt_HighNote.Size = new System.Drawing.Size(214, 25);

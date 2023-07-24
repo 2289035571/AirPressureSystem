@@ -15,7 +15,9 @@ namespace MS_UI.Form_HardWareConfig
     {
         public FrmIOVarConfig()
         {
+            
             InitializeComponent();
+            this.DGV_Var.AutoGenerateColumns = true;
         }
         //Modbus变量List集合
         public List<Variable_Modbus> VarList = new List<Variable_Modbus>();
@@ -25,6 +27,7 @@ namespace MS_UI.Form_HardWareConfig
         private void btn_New_Click(object sender, EventArgs e)
         {
             Frm_NewIOVar_Mod objFrm = new Frm_NewIOVar_Mod();
+            objFrm.ShowDialog();
             DialogResult dr = objFrm.DialogResult;
             if (dr == DialogResult.OK)
             {
@@ -34,7 +37,23 @@ namespace MS_UI.Form_HardWareConfig
                     this.VarAlarmList.Add(objFrm.varAlarm);
                 }
             }
-            objFrm.Show();
+            
+            
+                UpdataDGV();
+            
+            
+        }
+
+        private void UpdataDGV()
+        {
+            this.DGV_Var.DataSource = null;
+            this.DGV_Var.DataSource = this.VarList;
+            
+        }
+
+        private void btn_Modify_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
